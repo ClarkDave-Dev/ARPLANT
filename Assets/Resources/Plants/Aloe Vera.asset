@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f9a97709bb5bf4c9e2458299a0cf96, type: 3}
+  m_Name: Aloe Vera
+  m_EditorClassIdentifier: 
+  plantPrefab: {fileID: 6075182933364266813, guid: 350b3445d8c906c4e9e069aeb4339e3d,
+    type: 3}
+  commonName: Chinese Aloe
+  botanicalName: Aloe Vera
+  plantImage: {fileID: 21300000, guid: a085c95ed5000364faee267e9908a2d4, type: 3}
+  plantDetails: "Aloe Vera plant details here ...\t"
+  plantTrivia: Aloe Vera plant trivia here ...
+  plantMedicalUses: Aloe Vera medical uses here ...
