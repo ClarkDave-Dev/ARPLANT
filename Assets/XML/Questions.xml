@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facts>
+  <aloeVera>
+	<set1>
+		<question>This is question 1</question>
+		<answer>This is answer 1</answer>
+	</set1>
+	<set2>
+		<question>This is question 2</question>
+		<answer>This is answer 2</answer>
+	</set2>
+	<set3>
+		<question>This is question 3</question>
+		<answer>This is answer 3</answer>
+	</set3>
+	
+  </aloeVera>
+</facts>

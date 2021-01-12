@@ -14,6 +14,10 @@ public class ButtonManager : MonoBehaviour
     // [SerializeField]
     public Plant plant;
 
+    public int ID;
+
+    [SerializeField]
+    private newID newID;
     // UI Card
     [SerializeField]
     private Text commonName;
@@ -33,12 +37,14 @@ public class ButtonManager : MonoBehaviour
         commonName.text = plant.commonName;
         botanicalName.text = plant.botanicalName;
         plantImage.sprite = plant.plantImage;
+        newID.ID = ID;
 
         detailsManager = UIManager.Instance.detailsPanel.GetComponent<DetailsManager>();
         placementController = FindObjectOfType<PlacementController>();
 
         btn = GetComponent<Button>();
         btn.onClick.AddListener(SelectPlantModel);
+
     }
 
     private void SelectPlantModel()
@@ -49,4 +55,5 @@ public class ButtonManager : MonoBehaviour
         UIManager.Instance.TogglePlantMenuLayer();
         placementController.SetAllPlanesActive(true);
     }
+
 }

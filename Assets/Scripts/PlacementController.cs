@@ -6,16 +6,16 @@ using UnityEngine.XR.ARSubsystems;
 
 [RequireComponent(typeof(ARRaycastManager))]
 [RequireComponent(typeof(ARPlaneManager))]
-[RequireComponent(typeof(ARReferencePointManager))]
+[RequireComponent(typeof(ARAnchorManager))]
 public class PlacementController : MonoBehaviour
 {
     private ARRaycastManager arRaycastManager;
 
     private ARPlaneManager arPlaneManager;
 
-    private ARReferencePointManager arReferencePointManager;
+    private ARAnchorManager arReferencePointManager;
 
-    private ARReferencePoint referencePoint;
+    private ARAnchor referencePoint;
 
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
@@ -43,7 +43,7 @@ public class PlacementController : MonoBehaviour
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
         arPlaneManager = GetComponent<ARPlaneManager>();
-        arReferencePointManager = GetComponent<ARReferencePointManager>();
+        arReferencePointManager = GetComponent<ARAnchorManager>();
         detailsManager = FindObjectOfType<DetailsManager>();
         buttonManager = FindObjectOfType<ButtonManager>();
 
@@ -83,7 +83,7 @@ public class PlacementController : MonoBehaviour
         if(activated)
             UIManager.Instance.detailsPanel.SetActive(false);
 
-        arReferencePointManager.RemoveReferencePoint(referencePoint);
+        arReferencePointManager.RemoveAnchor(referencePoint);
         SetAllPlanesActive(true);
         placedPlants = 0;
 
@@ -116,8 +116,8 @@ public class PlacementController : MonoBehaviour
                     
                     if(placedPlants < 1)
                     {
-                        arReferencePointManager.referencePointPrefab = DataHandler.Instance.plant;
-                        referencePoint = arReferencePointManager.AddReferencePoint(hitPose);
+                        arReferencePointManager.anchorPrefab = DataHandler.Instance.plant;
+                        referencePoint = arReferencePointManager.AddAnchor(hitPose);
                         placedPlants = 1;
                         // EnableOption2();
                         UIManager.Instance.ShowOption2Layer();

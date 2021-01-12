@@ -11,14 +11,24 @@ public class UIManager : MonoBehaviour
     public GameObject detailsPanel;
     public GameObject triviaPanel;
     public GameObject welcomePanel;
+    public GameObject quizPanel;
+    public GameObject quizAnswerPanel;
     public GameObject backPanel;
     public GameObject wheel1;
     public GameObject wheel2;
     public GameObject plantMovePanel;
 
+
     private List<GameObject> panels = new List<GameObject>();
 
+    //
+    //Welcome Panel Ui Elements
+    //
 
+    public GameObject startButtonCover;
+    public GameObject startButton;
+    public GameObject logo;
+    public GameObject steps;
     // 
     // Wheel Buttons 
     // 
@@ -61,6 +71,8 @@ public class UIManager : MonoBehaviour
     // 
     [SerializeField]
     private GameObject plantCard;
+    [SerializeField]
+    private GameObject plantCardEmpty;
 
     [SerializeField]
     private Transform plantCardHolder;
@@ -70,7 +82,7 @@ public class UIManager : MonoBehaviour
     private ButtonManager buttonManager;
 
     private Plant[] plants;
-    
+
 
     private static UIManager instance;
 
@@ -93,6 +105,8 @@ public class UIManager : MonoBehaviour
         panels.Add(detailsPanel);
         panels.Add(triviaPanel);
         panels.Add(welcomePanel);
+        panels.Add(quizPanel);
+        panels.Add(quizAnswerPanel);
         panels.Add(backPanel);
         panels.Add(wheel1);
         panels.Add(wheel2);
@@ -108,12 +122,14 @@ public class UIManager : MonoBehaviour
     {
         database = GameObject.FindObjectOfType<Database>();
         plants = database.plants;
-        
+        int n = 0;
         foreach(Plant plant in plants)
         {
             buttonManager = plantCard.GetComponent<ButtonManager>();
             buttonManager.plant = plant;
+            buttonManager.ID = n;
             Instantiate(plantCard, plantCardHolder);
+            n++;
         }
     }
 
@@ -280,19 +296,46 @@ public class UIManager : MonoBehaviour
     public void ShowWelcomePanel()
     {
         DisableAll();
-        
+
         welcomePanel.SetActive(true);
+        steps.gameObject.SetActive(true);
+        logo.gameObject.SetActive(true);
+        startButton.gameObject.SetActive(true);
+        startButtonCover.gameObject.SetActive(false);
+        startButtonCover.GetComponent<RectTransform>().transform.localPosition = new Vector2(0,-1600);
+        startButtonCover.GetComponent<RectTransform>().LeanSize(new Vector2(1200, 400), 0);
+    }
+    public void ShowQuizPanel()
+    {
+        //   DisableAll();
+
+        //    welcomePanel.SetActive(true);
+
+        ButtonActionManager.Instance.quizPanelButton.gameObject.SetActive(false);
+        quizPanel.SetActive(true);
+        QuizController.Instance.CreateQuestion();
     }
 
+    public void CloseQuizPanel()
+    {
+        //   DisableAll();
 
-
+        //    welcomePanel.SetActive(true);
+        quizPanel.SetActive(false);
+        quizAnswerPanel.SetActive(false);
+        ButtonActionManager.Instance.quizPanelButton.gameObject.SetActive(true);
+    }
     public void ShowPlantMenuLayer()
     {
-        DisableAll();
+        if (welcomePanel.activeSelf)
+            StartCoroutine(WelcomePanelExitTransition());
+        else
+        {
+            plantMenu.SetActive(true);
+            optionPanel1.SetActive(true);
+            backPanel.SetActive(true);
+        }
 
-        plantMenu.SetActive(true);
-        optionPanel1.SetActive(true);
-        backPanel.SetActive(true);
     }
 
     public void ShowOption1Layer()
@@ -340,6 +383,22 @@ public class UIManager : MonoBehaviour
             EnableDetailsPanel();
     }
 
+    IEnumerator WelcomePanelExitTransition()
+    {
+        startButtonCover.gameObject.SetActive(true);
+        startButtonCover.GetComponent<RectTransform>().LeanSize(new Vector2(startButtonCover.GetComponent<RectTransform>().rect.width, startButtonCover.GetComponent<RectTransform>().rect.height + 3100), 0.3f);
+        yield return new WaitForSeconds(0.4f);
+        startButtonCover.GetComponent<RectTransform>().LeanMoveLocalY(3100, 0.4f);
+        steps.gameObject.SetActive(false);
+        logo.gameObject.SetActive(false);
+        startButton.gameObject.SetActive(false);
+       // yield return new WaitForSeconds(0.4f);
+
+        plantMenu.SetActive(true);
+        optionPanel1.SetActive(true);
+        backPanel.SetActive(true);
+    }
+
 
     // 
     // Trivia Panel Toggle Functions
@@ -377,10 +436,16 @@ public class UIManager : MonoBehaviour
     {
         bool isActive = plantMenu.activeSelf;
 
-        if(isActive)
+        if (isActive)
+        {
             ShowOption1Layer();
+            ButtonActionManager.Instance.quizPanelButton.gameObject.SetActive(true);
+        }
         else
+        {
             ShowPlantMenuLayer();
+            ButtonActionManager.Instance.quizPanelButton.gameObject.SetActive(false);
+        }
     }
 
 

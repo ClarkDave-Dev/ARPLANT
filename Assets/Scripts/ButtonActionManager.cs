@@ -11,6 +11,18 @@ public class ButtonActionManager : MonoBehaviour
     [SerializeField]
     private Button startButton;
 
+    [SerializeField]
+    public Button quizPanelButton;
+
+    //
+    // Quiz Panel Button
+    //
+
+    [SerializeField]
+    private Button quizExitButton;
+
+    [SerializeField]
+    public Button quizAnswerButton;
 
     // 
     // Options 1 Panel Buttons
@@ -83,6 +95,18 @@ public class ButtonActionManager : MonoBehaviour
     public delegate void ShowStem();
     public static event ShowStem ShowStemClicked;
 
+    private static ButtonActionManager instance;
+
+    public static ButtonActionManager Instance
+    {
+        get
+        {
+            if (instance == null)
+                instance = FindObjectOfType<ButtonActionManager>();
+
+            return instance;
+        }
+    }
     private void Start() 
     {
         // GUI Manipulation Button Listeners
@@ -90,6 +114,10 @@ public class ButtonActionManager : MonoBehaviour
         // detailsButton.onClick.AddListener(UIManager.Instance.ToggleDetailsPanel);
         // triviaButton.onClick.AddListener(UIManager.Instance.ToggleTriviaPanel);
         startButton.onClick.AddListener(UIManager.Instance.ShowPlantMenuLayer);
+        quizPanelButton.onClick.AddListener(UIManager.Instance.ShowQuizPanel);
+        quizExitButton.onClick.AddListener(UIManager.Instance.CloseQuizPanel);
+        quizExitButton.onClick.AddListener(QuizController.Instance.StopTimer);
+        quizAnswerButton.onClick.AddListener(QuizController.Instance.ShowAnswer);
         backButton.onClick.AddListener(UIManager.Instance.ShowWelcomePanel);
         optionsButton.onClick.AddListener(UIManager.Instance.ShowWheel1);
         wheel1CloseButton.onClick.AddListener(UIManager.Instance.CloseWheels);
@@ -137,4 +165,5 @@ public class ButtonActionManager : MonoBehaviour
             ShowStemClicked();
         }
     }
+
 }
