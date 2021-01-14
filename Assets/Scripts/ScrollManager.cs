@@ -22,6 +22,7 @@ public class ScrollManager : MonoBehaviour, IPointerDownHandler
     [SerializeField]
     private Text text;
 
+
     private float firstValue = 0;
     private float lastValue = 0;
     private bool mousePos = false;
@@ -35,9 +36,10 @@ public class ScrollManager : MonoBehaviour, IPointerDownHandler
          if (eventData.pointerCurrentRaycast.gameObject != null)
          {
              elementID = eventData.pointerCurrentRaycast.gameObject.GetComponent<newID>().ID;
+            UIManager.Instance.quizPanel.GetComponent<newID>().ID = elementID;
           //   UpdTxt("Mouse Over: " + eventData.pointerCurrentRaycast.gameObject.GetComponent<newID>().ID.ToString());
          }
-     }  
+     }
     // Update is called once per frame
     void Update()
     {

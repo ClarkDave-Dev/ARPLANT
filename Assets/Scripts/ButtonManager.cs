@@ -28,6 +28,7 @@ public class ButtonManager : MonoBehaviour
     [SerializeField]
     private Image plantImage;
 
+
     private DetailsManager detailsManager;
 
     private PlacementController placementController;

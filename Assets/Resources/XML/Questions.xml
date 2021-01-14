@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <facts>
-  <aloeVera>
+  <plant1>
 	<set1>
-		<question>This is question 1</question>
-		<answer>This is answer 1</answer>
+		<question>This is question 1 for Plant1</question>
+		<answer>This is answer 1 for Plant1</answer>
 	</set1>
 	<set2>
-		<question>This is question 2</question>
-		<answer>This is answer 2</answer>
+		<question>This is question 2 for Plant1</question>
+		<answer>This is answer 2 for Plant1</answer>
 	</set2>
 	<set3>
-		<question>This is question 3</question>
-		<answer>This is answer 3</answer>
+		<question>This is question 3 for Plant1</question>
+		<answer>This is answer 3 for Plant1</answer>
 	</set3>
 	
-  </aloeVera>
+  </plant1>
+  <plant2>
+	<set1>
+		<question>This is question 1 for Plant2</question>
+		<answer>This is answer 1 for Plant2</answer>
+	</set1>
+	<set2>
+		<question>This is question 2 for Plant2</question>
+		<answer>This is answer 2 for Plant2</answer>
+	</set2>
+	<set3>
+		<question>This is question 3 for Plant2</question>
+		<answer>This is answer 3 for Plant2</answer>
+	</set3>
+	
+  </plant2>
+  <plant3>
+	<set1>
+		<question>This is question 1 for Plant3</question>
+		<answer>This is answer 1 for Plant3</answer>
+	</set1>
+	<set2>
+		<question>This is question 2 for Plant3</question>
+		<answer>This is answer 2 for Plant3</answer>
+	</set2>
+	<set3>
+		<question>This is question 3 for Plant3</question>
+		<answer>This is answer 3 for Plant3</answer>
+	</set3>
+	
+  </plant3>
 </facts>

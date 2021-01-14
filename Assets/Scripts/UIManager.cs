@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -13,6 +14,7 @@ public class UIManager : MonoBehaviour
     public GameObject welcomePanel;
     public GameObject quizPanel;
     public GameObject quizAnswerPanel;
+    public GameObject quizPrompt;
     public GameObject backPanel;
     public GameObject wheel1;
     public GameObject wheel2;
@@ -305,15 +307,31 @@ public class UIManager : MonoBehaviour
         startButtonCover.GetComponent<RectTransform>().transform.localPosition = new Vector2(0,-1600);
         startButtonCover.GetComponent<RectTransform>().LeanSize(new Vector2(1200, 400), 0);
     }
+    public void ShowQuizPrompt()
+    {
+        ButtonActionManager.Instance.quizPanelButton.gameObject.SetActive(false);
+        quizPrompt.SetActive(true);
+        Vector2 currentPos = quizPrompt.GetComponent<RectTransform>().transform.localPosition;
+        quizPrompt.GetComponent<RectTransform>().transform.localPosition = new Vector2(currentPos.x + 1000, currentPos.y);
+        StartCoroutine(QuizPromptTransition(currentPos));
+
+    }
+    public void CloseQuizPrompt()
+    {
+        Vector2 currentPos = quizPrompt.GetComponent<RectTransform>().transform.localPosition;
+        StartCoroutine(QuizPromptExit(currentPos));
+        ButtonActionManager.Instance.quizPanelButton.gameObject.SetActive(true);
+    }
     public void ShowQuizPanel()
     {
         //   DisableAll();
 
         //    welcomePanel.SetActive(true);
 
-        ButtonActionManager.Instance.quizPanelButton.gameObject.SetActive(false);
+        Vector2 currentPos = quizPrompt.GetComponent<RectTransform>().transform.localPosition;
+        StartCoroutine(QuizPromptExit(currentPos));
         quizPanel.SetActive(true);
-        QuizController.Instance.CreateQuestion();
+        QuizController.Instance.CreateQuestion(quizPanel.GetComponent<newID>().ID);
     }
 
     public void CloseQuizPanel()
@@ -399,6 +417,19 @@ public class UIManager : MonoBehaviour
         backPanel.SetActive(true);
     }
 
+    IEnumerator QuizPromptTransition(Vector2 currentPos)
+    {
+        quizPrompt.GetComponent<RectTransform>().LeanMoveLocalX(currentPos.x, 0.2f);
+        yield return null;
+    }
+    IEnumerator QuizPromptExit(Vector2 currentPos)
+    {
+        quizPrompt.GetComponent<RectTransform>().LeanMoveLocalX(currentPos.x - 1000, 0.2f);
+        yield return new WaitForSeconds(0.2f);
+        quizPrompt.SetActive(false);
+        quizPrompt.GetComponent<RectTransform>().transform.localPosition = new Vector2(currentPos.x, currentPos.y);
+    }
+
 
     // 
     // Trivia Panel Toggle Functions
@@ -445,6 +476,9 @@ public class UIManager : MonoBehaviour
         {
             ShowPlantMenuLayer();
             ButtonActionManager.Instance.quizPanelButton.gameObject.SetActive(false);
+            quizPrompt.SetActive(false);
+            Vector2 currentPos = quizPrompt.GetComponent<RectTransform>().transform.localPosition;
+            StartCoroutine(QuizPromptExit(currentPos));
         }
     }
 

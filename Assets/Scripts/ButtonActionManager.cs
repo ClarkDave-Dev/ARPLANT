@@ -25,6 +25,15 @@ public class ButtonActionManager : MonoBehaviour
     public Button quizAnswerButton;
 
     // 
+    // Quiz Prompt Buttons 
+    // 
+
+    [SerializeField]
+    private Button yesButton;
+
+    [SerializeField]
+    private Button noButton;
+    // 
     // Options 1 Panel Buttons
     // 
     [SerializeField]
@@ -114,10 +123,12 @@ public class ButtonActionManager : MonoBehaviour
         // detailsButton.onClick.AddListener(UIManager.Instance.ToggleDetailsPanel);
         // triviaButton.onClick.AddListener(UIManager.Instance.ToggleTriviaPanel);
         startButton.onClick.AddListener(UIManager.Instance.ShowPlantMenuLayer);
-        quizPanelButton.onClick.AddListener(UIManager.Instance.ShowQuizPanel);
+        quizPanelButton.onClick.AddListener(UIManager.Instance.ShowQuizPrompt);
+        yesButton.onClick.AddListener(UIManager.Instance.ShowQuizPanel);
+        noButton.onClick.AddListener(UIManager.Instance.CloseQuizPrompt);
         quizExitButton.onClick.AddListener(UIManager.Instance.CloseQuizPanel);
         quizExitButton.onClick.AddListener(QuizController.Instance.StopTimer);
-        quizAnswerButton.onClick.AddListener(QuizController.Instance.ShowAnswer);
+      //  quizAnswerButton.onClick.AddListener(QuizController.Instance.ShowAnswer);
         backButton.onClick.AddListener(UIManager.Instance.ShowWelcomePanel);
         optionsButton.onClick.AddListener(UIManager.Instance.ShowWheel1);
         wheel1CloseButton.onClick.AddListener(UIManager.Instance.CloseWheels);
