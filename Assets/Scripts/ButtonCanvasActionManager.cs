@@ -21,6 +21,18 @@ public class ButtonCanvasActionManager : MonoBehaviour
     [SerializeField]
     private Button closeButton;
 
+    [SerializeField]
+    private Button plantButton;
+
+    [SerializeField]
+    private Button leafButton;
+
+    [SerializeField]
+    private Button stemButton;
+
+    [SerializeField]
+    private Button flowerButton;
+
 
     private ButtonCanvasTweening buttonCanvasTweening;
 
@@ -38,6 +50,26 @@ public class ButtonCanvasActionManager : MonoBehaviour
     public delegate void ShowMedicalUses();
     public static event ShowMedicalUses MedicalUsesButtonTapped;
 
+    public delegate void HideDetails();
+    public static event HideDetails HideDetailsEvent;
+
+    public delegate void HideTrivia();
+    public static event HideTrivia HideTriviaEvent;
+
+    public delegate void HideMedicalUses();
+    public static event HideMedicalUses HideMedicalUsesEvent;
+
+    public delegate void ShowPlant();
+    public static event ShowPlant ShowPlantEvent;
+    public delegate void ShowLeaf();
+    public static event ShowLeaf ShowLeafEvent;
+
+    public delegate void ShowStem();
+    public static event ShowStem ShowStemEvent;
+
+    public delegate void ShowFlower();
+    public static event ShowFlower ShowFlowerEvent;
+
     private void Start() 
     {
         buttonCanvasTweening = GameObject.FindObjectOfType<ButtonCanvasTweening>();
@@ -50,11 +82,23 @@ public class ButtonCanvasActionManager : MonoBehaviour
         medicalUsesButton.onClick.AddListener(MedicalUsesButtonTap);
         closeButton.onClick.AddListener(HideButtonCanvas);
 
+        plantButton.onClick.AddListener(ShowPlantPart);
+        leafButton.onClick.AddListener(ShowLeafPart);
+        stemButton.onClick.AddListener(ShowStemPart);
+        flowerButton.onClick.AddListener(ShowFlowerPart);
+
         HideButtonCanvas();
     }
 
     private void HideButtonCanvas()
     {
+        if(HideDetailsEvent != null)
+            HideDetailsEvent();
+        if(HideTriviaEvent != null)
+            HideTriviaEvent();
+        if(HideMedicalUsesEvent != null)
+            HideMedicalUsesEvent();
+
         gameObject.SetActive(false);
     }
 
@@ -94,5 +138,29 @@ public class ButtonCanvasActionManager : MonoBehaviour
             buttonCanvasTweening.PartsButtonEntry();
         
         partsButtonIsActive = !partsButtonIsActive;
+    }
+
+    private void ShowPlantPart()
+    {
+        if(ShowPlantEvent != null)
+            ShowPlantEvent();
+    }
+
+    private void ShowLeafPart()
+    {
+        if(ShowLeafEvent != null)
+            ShowLeafEvent();
+    }
+
+    private void ShowStemPart()
+    {
+        if(ShowStemEvent != null)
+            ShowStemEvent();
+    }
+
+    private void ShowFlowerPart()
+    {
+        if(ShowFlowerEvent != null)
+            ShowFlowerEvent();
     }
 }

@@ -53,6 +53,10 @@ public class CanvasController : MonoBehaviour
         ButtonCanvasActionManager.DetailsButtonTapped += ShowDetailsPanel;
         ButtonCanvasActionManager.TriviaButtonTapped += ShowTriviaPanel;
         ButtonCanvasActionManager.MedicalUsesButtonTapped += ShowMedicalUsesPanel;
+
+        ButtonCanvasActionManager.HideDetailsEvent += HideDetailsPanel;
+        ButtonCanvasActionManager.HideTriviaEvent += HideTriviaPanel;
+        ButtonCanvasActionManager.HideMedicalUsesEvent += HideMedicalUsesPanel;
     }
 
     private void OnDisable() 
@@ -60,6 +64,10 @@ public class CanvasController : MonoBehaviour
         ButtonCanvasActionManager.DetailsButtonTapped -= ShowDetailsPanel;
         ButtonCanvasActionManager.TriviaButtonTapped -= ShowTriviaPanel;
         ButtonCanvasActionManager.MedicalUsesButtonTapped -= ShowMedicalUsesPanel;
+
+        ButtonCanvasActionManager.HideDetailsEvent -= HideDetailsPanel;
+        ButtonCanvasActionManager.HideTriviaEvent -= HideTriviaPanel;
+        ButtonCanvasActionManager.HideMedicalUsesEvent -= HideMedicalUsesPanel;
     }
 
     private void ShowDetailsPanel()
@@ -78,5 +86,23 @@ public class CanvasController : MonoBehaviour
     {
         if(!medicalUsesPanel.activeSelf)
             medicalUsesPanel.SetActive(true);
+    }
+
+    private void HideDetailsPanel()
+    {
+        if(detailsPanel.activeSelf)
+            detailsPanel.SetActive(false);
+    }
+
+    private void HideTriviaPanel()
+    {
+        if(triviaPanel.activeSelf)
+            triviaPanel.SetActive(false);
+    }
+
+    private void HideMedicalUsesPanel()
+    {
+        if(medicalUsesPanel.activeSelf)
+            medicalUsesPanel.SetActive(false);
     }
 }

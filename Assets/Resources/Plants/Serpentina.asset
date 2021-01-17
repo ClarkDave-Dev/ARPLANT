@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f9a97709bb5bf4c9e2458299a0cf96, type: 3}
+  m_Name: Serpentina
+  m_EditorClassIdentifier: 
+  plantPrefab: {fileID: 1112613433837353125, guid: db0a91fc43e4cd342a2cce4251211b1e,
+    type: 3}
+  commonName: Indian snakeroot
+  botanicalName: Rauvolfia serpentina
+  plantImage: {fileID: 21300000, guid: 09c407345c6a94041ba585a3b9f0141b, type: 3}
+  plantDetails: Serpentina Details
+  plantTrivia: Serpentina Trivia
+  plantMedicalUses: Serpentina Medical Uses

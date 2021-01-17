@@ -23,7 +23,7 @@ public class PlacementController : MonoBehaviour
     private Camera arCamera;
 
     [SerializeField]
-    private Button clearPlantButton;
+    private Button changePlantButton;
 
     [SerializeField]
     private Button moveButton;
@@ -48,7 +48,7 @@ public class PlacementController : MonoBehaviour
         buttonManager = FindObjectOfType<ButtonManager>();
 
         SetAllPlanesActive(false);
-        clearPlantButton.onClick.AddListener(RemoveSpawnedPlant);
+        changePlantButton.onClick.AddListener(ChangePlant);
         
         moveButton.onClick.AddListener(MovePlant);
         doneMovingButton.onClick.AddListener(MovePlantDone);
@@ -57,7 +57,6 @@ public class PlacementController : MonoBehaviour
 
     private void MovePlant()
     {
-        UIManager.Instance.CloseWheels();
         SetAllPlanesActive(true);
         isMoving = true;
 
@@ -76,7 +75,7 @@ public class PlacementController : MonoBehaviour
 
 
     // Removing the instantiated plant model in world space
-    public void RemoveSpawnedPlant()
+    public void ChangePlant()
     {
         bool activated = UIManager.Instance.detailsPanel.activeSelf;
 
@@ -88,6 +87,7 @@ public class PlacementController : MonoBehaviour
         placedPlants = 0;
 
         UIManager.Instance.ShowOption1Layer();
+        UIManager.Instance.ShowPlantMenuLayer();
     }
 
     void Update()

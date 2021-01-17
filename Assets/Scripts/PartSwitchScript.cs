@@ -26,18 +26,20 @@ public class PartSwitchScript : MonoBehaviour
 
     void OnEnable()
     {
-        ButtonActionManager.ShowLeafCLicked += ShowLeafPart;
-        ButtonActionManager.ShowPlantClicked += ShowPlantPart;
-        ButtonActionManager.ShowStemClicked += ShowStemPart;
+        ButtonCanvasActionManager.ShowLeafEvent += ShowLeafPart;
+        ButtonCanvasActionManager.ShowPlantEvent += ShowPlantPart;
+        ButtonCanvasActionManager.ShowStemEvent += ShowStemPart;
+        ButtonCanvasActionManager.ShowFlowerEvent += ShowFlowerPart;
 
         PlantControls.PlantControlsTapped += ShowButtonCanvas;
     }
 
     void OnDisable() 
     {
-        ButtonActionManager.ShowLeafCLicked -= ShowLeafPart;
-        ButtonActionManager.ShowPlantClicked -= ShowPlantPart;
-        ButtonActionManager.ShowStemClicked -= ShowStemPart;
+        ButtonCanvasActionManager.ShowLeafEvent -= ShowLeafPart;
+        ButtonCanvasActionManager.ShowPlantEvent -= ShowPlantPart;
+        ButtonCanvasActionManager.ShowStemEvent -= ShowStemPart;
+        ButtonCanvasActionManager.ShowFlowerEvent -= ShowFlowerPart;
 
         PlantControls.PlantControlsTapped -= ShowButtonCanvas;
     }
@@ -61,6 +63,17 @@ public class PartSwitchScript : MonoBehaviour
         }
     }
 
+    private void CleanCanvas()
+    {
+        foreach(Transform panel in transform)
+        {
+            if(panel.name == "InformationCanvas")
+                panel.gameObject.SetActive(false);
+            if(panel.name == "ButtonCanvas")
+                panel.gameObject.SetActive(false);
+        }
+    }
+
     private bool HasPart(string partName)
     {
         foreach(Transform part in transform)
@@ -74,6 +87,7 @@ public class PartSwitchScript : MonoBehaviour
 
     private void HideCurrentModel()
     {
+        CleanCanvas();
         if(currentModel == "Plant")
             HidePlantModel();
         else if(currentModel == "Leaf")
@@ -134,6 +148,23 @@ public class PartSwitchScript : MonoBehaviour
 
         SwitchPart("Stem");
         currentModel = "Stem";
+    }
+
+    private void ShowFlowerPart()
+    {
+        if(currentModel != "Flower" && HasPart("Flower"))
+        {
+            HideCurrentModel();
+            StartCoroutine(ShowFlowerPartDelay());
+        }
+    }
+
+    private IEnumerator ShowFlowerPartDelay()
+    {
+        yield return new WaitForSeconds(2f);
+
+        SwitchPart("Flower");
+        currentModel = "Flower";
     }
 
     private void ShowButtonCanvas()
