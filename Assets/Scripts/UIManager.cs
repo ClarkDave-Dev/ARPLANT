@@ -12,6 +12,11 @@ public class UIManager : MonoBehaviour
     public GameObject detailsPanel;
     public GameObject triviaPanel;
     public GameObject welcomePanel;
+    public GameObject helpButtonContainer;
+    public GameObject helpPanel;
+    public GameObject deployHelpPanel;
+    public GameObject changeHelpPanel;
+    public GameObject moveHelpPanel;
     public GameObject quizPanel;
     public GameObject quizAnswerPanel;
     public GameObject quizPrompt;
@@ -27,6 +32,7 @@ public class UIManager : MonoBehaviour
 
     public GameObject startButtonCover;
     public GameObject startButton;
+    public GameObject menuButton;
     public GameObject logo;
     public GameObject steps;
 
@@ -76,6 +82,9 @@ public class UIManager : MonoBehaviour
         ShowWelcomePanel();
         // ShowOption2Layer();
         PopulatePlantMenu();
+        testbtn.onClick.AddListener(testbtnclick);
+        yesExit.onClick.AddListener(ConfirmExit);
+        noExit.onClick.AddListener(CancelExit);
     }
 
     // 
@@ -204,9 +213,7 @@ public class UIManager : MonoBehaviour
             StartCoroutine(WelcomePanelExitTransition());
         else
         {
-            plantMenu.SetActive(true);
-            optionPanel1.SetActive(true);
-            backPanel.SetActive(true);
+            StartCoroutine(MenuToggleWaitFrame());
         }
 
     }
@@ -217,6 +224,7 @@ public class UIManager : MonoBehaviour
 
         optionPanel1.SetActive(true);
     }
+
 
     public void ShowOption2Layer()
     {
@@ -234,11 +242,12 @@ public class UIManager : MonoBehaviour
         steps.gameObject.SetActive(false);
         logo.gameObject.SetActive(false);
         startButton.gameObject.SetActive(false);
-       // yield return new WaitForSeconds(0.4f);
 
         plantMenu.SetActive(true);
         optionPanel1.SetActive(true);
         backPanel.SetActive(true);
+        yield return new WaitForSeconds(0.4f);
+        welcomePanel.SetActive(false);
     }
 
     IEnumerator QuizPromptTransition(Vector2 currentPos)
@@ -253,24 +262,102 @@ public class UIManager : MonoBehaviour
         quizPrompt.SetActive(false);
         quizPrompt.GetComponent<RectTransform>().transform.localPosition = new Vector2(currentPos.x, currentPos.y);
     }
-
-    // Toggle Plant Menu Function
-    public void TogglePlantMenuLayer()
+    IEnumerator MenuButtonFade(bool fadeout)
     {
+        if (fadeout)
+        {
+            for (float i = 1; i > 0; i -= Time.deltaTime * 4)
+            {
+                menuButton.GetComponent<CanvasGroup>().alpha = i;
+                yield return null;
+            }
+        }
+        else
+        {
+            for (float i = 0; i <= 1; i += Time.deltaTime * 4)
+            {
+                menuButton.GetComponent<CanvasGroup>().alpha = i;
+                yield return null;
+            }
+        }
+    }
+    IEnumerator MenuToggleWaitFrame()
+    {
+        yield return new WaitForEndOfFrame();
         bool isActive = plantMenu.activeSelf;
 
         if (isActive)
         {
             ShowOption1Layer();
+            helpButtonContainer.SetActive(true);
+            StartCoroutine(MenuButtonFade(true));
             ButtonActionManager.Instance.quizPanelButton.gameObject.SetActive(true);
         }
         else
         {
-            ShowPlantMenuLayer();
+            plantMenu.SetActive(true);
+            optionPanel1.SetActive(true);
+            backPanel.SetActive(true);
+            helpButtonContainer.SetActive(false);
+            helpPanel.SetActive(false);
+            deployHelpPanel.SetActive(false);
+            changeHelpPanel.SetActive(false);
+            moveHelpPanel.SetActive(false);
+            StartCoroutine(MenuButtonFade(false));
             ButtonActionManager.Instance.quizPanelButton.gameObject.SetActive(false);
             quizPrompt.SetActive(false);
             Vector2 currentPos = quizPrompt.GetComponent<RectTransform>().transform.localPosition;
             StartCoroutine(QuizPromptExit(currentPos));
         }
+    }
+
+    // Toggle Plant Menu Function
+    public void TogglePlantMenuLayer()
+    {
+        StartCoroutine(MenuToggleWaitFrame());
+    }
+
+
+    public GameObject testPrefab;
+    public Button testbtn;
+    public GameObject cube;
+
+
+    public GameObject exitPrompt;
+
+    [SerializeField]
+    private Button yesExit;
+    [SerializeField]
+    private Button noExit;
+
+    private void testbtnclick()
+    {
+        GameObject go = (GameObject)Instantiate(testPrefab, cube.GetComponent<Transform>().position, Quaternion.identity);
+        //canvass.SetActive(false);
+    }
+    private void Update()
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+
+            // Check if Back was pressed this frame
+            if (Input.GetKeyDown(KeyCode.Escape) && welcomePanel.activeSelf)
+            {
+                exitPrompt.SetActive(true);
+            }
+
+            if (exitPrompt.activeSelf && !welcomePanel.activeSelf)
+            {
+                exitPrompt.SetActive(false);
+            }
+        }
+    }
+    private void ConfirmExit()
+    {
+        Application.Quit();
+    }
+    private void CancelExit()
+    {
+        exitPrompt.SetActive(false);
     }
 }

@@ -28,6 +28,9 @@ public class ButtonManager : MonoBehaviour
     [SerializeField]
     private Image plantImage;
 
+    [SerializeField]
+    private Text infoText;
+
 
     private DetailsManager detailsManager;
 
@@ -38,6 +41,7 @@ public class ButtonManager : MonoBehaviour
         commonName.text = plant.commonName;
         botanicalName.text = plant.botanicalName;
         plantImage.sprite = plant.plantImage;
+        infoText.text = plant.plantGeneralInfo;
         newID.ID = ID;
 
         detailsManager = UIManager.Instance.detailsPanel.GetComponent<DetailsManager>();

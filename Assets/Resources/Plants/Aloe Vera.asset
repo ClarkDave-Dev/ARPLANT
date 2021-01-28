@@ -17,6 +17,18 @@ MonoBehaviour:
   commonName: Chinese Aloe
   botanicalName: Aloe Vera
   plantImage: {fileID: 21300000, guid: a085c95ed5000364faee267e9908a2d4, type: 3}
-  plantDetails: "Aloe Vera plant details here ...\t"
-  plantTrivia: Aloe Vera plant trivia here ...
-  plantMedicalUses: Aloe Vera medical uses here ...
+  plantDetails: Aloe is a succulent plant that grows in hot, dry climates. The most
+    common medicinal variety is Aloe vera (barbadensis Miller), which has been clinically
+    shown to have the most nutrients of the over 500 species of aloe throughout the
+    world.
+  plantTrivia: "The word \u201Caloe\u201D comes from the Arabic term alloeh, which
+    means \u201Cshining bitter substance,\u201D and \u201Cvera\u201D comes from the
+    Latin word veritas, meaning \u201Ctruth.\u201D And it\u2019s true, the juice
+    of the whole processed leaf is invigoratingly bitter."
+  plantMedicalUses: "Aloe vera contains cooling properties similar to menthol. This
+    is perhaps the plant\u2019s best known quality. Gently apply the gel to soothe
+    and heal sunburns, minor kitchen burns, scrapes, and itchy insect bites."
+  plantGeneralInfo: Aloe vera is a succulent plant species of the genus Aloe. An
+    evergreen perennial, it originates from the Arabian Peninsula, but grows wild
+    in tropical, semi-tropical, and arid climates around the world. It is cultivated
+    for agricultural and medicinal uses.

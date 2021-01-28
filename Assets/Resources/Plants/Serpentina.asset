@@ -17,6 +17,19 @@ MonoBehaviour:
   commonName: Indian snakeroot
   botanicalName: Rauvolfia serpentina
   plantImage: {fileID: 21300000, guid: 09c407345c6a94041ba585a3b9f0141b, type: 3}
-  plantDetails: Serpentina Details
-  plantTrivia: Serpentina Trivia
-  plantMedicalUses: Serpentina Medical Uses
+  plantDetails: Indian Snakeroot is a species of flower which belongs to milkweed
+    family Apocynaceae. It is native to Indian subcontinent and East Asia. The root
+    of the plant is used in Asian medicine that includes traditional Ayurvedic medicine.
+  plantTrivia: Did you know - The part of Indian snakeroot that is used, as the name
+    implies, is the root, which can be chewed, dried, powdered, and consumed in that
+    way.
+  plantMedicalUses: Indian snakeroot has been used in traditional Ayurvedic medicine
+    in India, mainly for high blood pressure and mental illnesses such as schizophrenia
+    and anxiety. Also, one of the chemicals in Indian snakeroot is the same as a
+    prescription drug called reserpine. Reserpine has been used to treat high blood
+    pressure, schizophrenia, and some symptoms of poor circulation.
+  plantGeneralInfo: Rauvolfia serpentina, the Indian snakeroot, devil pepper, or
+    serpentine wood, is a species of flower in the milkweed family Apocynaceae. It
+    is native to the Indian subcontinent and East Asia. Rauvolfia is a perennial
+    undershrub widely distributed in India in the sub-Himalayan regions up to 1,000
+    metres.

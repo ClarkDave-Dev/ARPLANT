@@ -39,6 +39,9 @@ public class ButtonActionManager : MonoBehaviour
     [SerializeField]
     private Button menuButton;
 
+    [SerializeField]
+    private Button menuButtonInner;
+
     // 
     // Back Panel Buttons
     // 
@@ -69,6 +72,8 @@ public class ButtonActionManager : MonoBehaviour
     {
         // GUI Manipulation Button Listeners
         menuButton.onClick.AddListener(UIManager.Instance.TogglePlantMenuLayer);
+      //  menuButtonInner.onClick.AddListener(UIManager.Instance.TogglePlantMenuLayer);
+      //  menuButtonInner.onClick.AddListener(UIManager.Instance.ResetMenuButton);
         // detailsButton.onClick.AddListener(UIManager.Instance.ToggleDetailsPanel);
         // triviaButton.onClick.AddListener(UIManager.Instance.ToggleTriviaPanel);
         startButton.onClick.AddListener(UIManager.Instance.ShowPlantMenuLayer);

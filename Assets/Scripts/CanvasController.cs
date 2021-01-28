@@ -38,6 +38,12 @@ public class CanvasController : MonoBehaviour
 
         SetPanelContents();
     }
+  /*  private void Update()
+    {
+        detailsPanel.SetActive(true);
+        medicalUsesPanel.SetActive(true);
+        triviaPanel.SetActive(true);
+    } */
 
     private void SetPanelContents()
     {

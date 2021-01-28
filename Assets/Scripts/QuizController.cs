@@ -24,7 +24,6 @@ public class QuizController : MonoBehaviour
     public GameObject quizButton;
 
     // Start is called before the first frame update
-    public QuestionList QL;
     public double targetTime = 5.0;
 
     private XmlDocument doc = new XmlDocument();

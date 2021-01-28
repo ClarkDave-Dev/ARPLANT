@@ -22,6 +22,9 @@ public class ScrollManager : MonoBehaviour, IPointerDownHandler
     [SerializeField]
     private Text text;
 
+    [SerializeField]
+    private Text infoText;
+
 
     private float firstValue = 0;
     private float lastValue = 0;

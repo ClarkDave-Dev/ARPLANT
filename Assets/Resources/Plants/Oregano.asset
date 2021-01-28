@@ -17,6 +17,17 @@ MonoBehaviour:
   commonName: Oregano
   botanicalName: Origanium Vulgare
   plantImage: {fileID: 21300000, guid: 5854a31c926653942a2ea7c4ab81071c, type: 3}
-  plantDetails: Oregano plant details here ...
-  plantTrivia: Oregano plant trivia here ...
-  plantMedicalUses: Oregano plant medicial uses here ...
+  plantDetails: Oregano, (Origanum vulgare), also called origanum or wild marjoram,
+    aromatic perennial herb of the mint family (Lamiaceae) known for its flavourful
+    dried leaves and flowering tops. Oregano is native to the hills of the Mediterranean
+    countries and western Asia and has naturalized in parts of Mexico and the United
+    States.
+  plantTrivia: Did you know? - Ancient Greeks believed that cows that grazed in fields
+    full of oregano had tastier meat.
+  plantMedicalUses: Oregano leaf is used to make medicine. Oregano is used for respiratory
+    tract disorders such as coughs, asthma, croup, and bronchitis. It is also used
+    for gastrointestinal (GI) disorders such as heartburn and bloating.
+  plantGeneralInfo: "Oregano is a flowering plant in the mint family. It is native
+    to temperate Western and Southwestern Eurasia and the Mediterranean region. Oregano
+    is a perennial herb, growing from 20\u201380 cm tall, with opposite leaves 1\u20134
+    cm long. The flowers are purple, 3\u20134 mm long, produced in erect spikes."

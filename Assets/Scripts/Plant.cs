@@ -22,4 +22,7 @@ public class Plant : ScriptableObject
 
     [Multiline]
     public string plantMedicalUses;
+
+    [Multiline]
+    public string plantGeneralInfo;
 }

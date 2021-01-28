@@ -17,6 +17,21 @@ MonoBehaviour:
   commonName: Saw Palmetto
   botanicalName: Serenoa Repens
   plantImage: {fileID: 21300000, guid: c40985ed1f8af534fae1272052d7c724, type: 3}
-  plantDetails: Saw Palmetto plant details here ...
-  plantTrivia: Saw Palmetto plant trivia here ...
-  plantMedicalUses: Saw Palmetto plant medical uses here ...
+  plantDetails: Saw palmetto is a type of small palm tree found in Florida and parts
+    of other southeastern states. It has long, green, pointed leaves like many types
+    of palm trees. It also has branches with small berries.
+  plantTrivia: Did you know - Native Americans from the Seminole tribe in Florida
+    traditionally ate saw palmetto berries for food and to treat urinary and reproductive
+    problems associated with an enlarged prostate gland. They also used it to treat
+    cough, indigestion, sleeping problems, and infertility.
+  plantMedicalUses: Saw palmetto is a supplement made from the fruit of the Serenoa
+    repens tree. It's often used to treat enlarged prostate, improve urinary function,
+    and enhance hair growth. Some also use the supplement to boost libido and fertility
+    and reduce inflammation. Finally, saw palmetto is claimed to have anticancer
+    effects.
+  plantGeneralInfo: "Serenoa repens, commonly known as saw palmetto, is the sole
+    species currently classified in the genus Serenoa. It is a small palm, growing
+    to a maximum height around 7\u201310 ft. It is endemic to Southeastern United
+    States, most commonly along the south Atlantic and Gulf Coastal plains. It grows
+    in clumps or dense thickets in sandy coastal areas, and as undergrowth in pine
+    woods or hardwood hammocks."
