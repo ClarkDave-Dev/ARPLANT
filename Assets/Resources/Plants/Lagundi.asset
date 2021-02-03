@@ -17,7 +17,18 @@ MonoBehaviour:
   commonName: Five-leaved chaste tree (Lagundi)
   botanicalName: Vitex negundo
   plantImage: {fileID: 21300000, guid: f4c082be7512120448ab1f53a09b97eb, type: 3}
-  plantDetails: Lagundi Details
-  plantTrivia: Lagundi Trivia
-  plantMedicalUses: Lagundi Medical Uses
-  plantGeneralInfo: General Info...
+  plantDetails: Lagundi (Vitex negundo) is an erect, branched tree or shrub, that
+    grows to as much as 5 m high. Lagundi has a single thick, woody stem like a trunk
+    and is usually seen in swamps of the Philippines and India. Lagundi leaves appear
+    palmately, in the form of five pointed leaves which splay out like the fingers
+    of a hand.
+  plantTrivia: 'Did you know that Lagundi is one of the ten herbal medicines endorsed
+    by the Philippine Department of Health as an effective herbal medicine with proven
+    therapeutic value. '
+  plantMedicalUses: Lagundi is used to prevent and treat worm infestation. It is
+    used to wash wounds to promote healing. Lagunid is used for anorexia. It is also
+    used to treat stomach problems such as colic, spasms and indisgeston.
+  plantGeneralInfo: Vitex negundo, commonly known as the Chinese chaste tree, five-leaved
+    chaste tree, or horseshoe vitex, or nisinda is a large aromatic shrub with quadrangular,
+    densely whitish, tomentose branchlets. It is widely used in folk medicine, particularly
+    in South and Southeast Asia.

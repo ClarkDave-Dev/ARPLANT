@@ -17,7 +17,15 @@ MonoBehaviour:
   commonName: Sambong
   botanicalName: Blumea balsamifera
   plantImage: {fileID: 21300000, guid: 0a0895fb3883a994490a9d3f7c2422cb, type: 3}
-  plantDetails: Sambong Details...
-  plantTrivia: Sambong Trivia...
-  plantMedicalUses: Medical Uses ...
-  plantGeneralInfo: General Info...
+  plantDetails: Sambong | Blumea balsamifera DC, a medicinal herb, is widely distributed
+    in Eastern and Southeastern Asia. It has been used in folk medicine for its many
+    health benefits that include the treatment of septic wounds, respiratory infections,
+    stomach pains and kidney stones.
+  plantTrivia: Did you know - Sambong is considered as a weed in some countries and
+    is difficult to eradicate.
+  plantMedicalUses: As a diuretic, sambong is an herb used to treat urolithiasis
+    (urinary tract or kidney stones) and urinary tract infections, and thus reduces
+    high blood pressure. Sambong works as an expectorant, an anti-diarrheal and an
+    anti-spasmotic, all of which treat some symptoms of the common cold.
+  plantGeneralInfo: Blumea balsamifera is a flowering plant belonging to the genus
+    Blumea of the family Asteraceae. It is also known as Ngai camphor and sambong.

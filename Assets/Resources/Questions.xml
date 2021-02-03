@@ -17,6 +17,36 @@
   </plant1>
   <plant2>
 	<set1>
+		<question>How many common names does Kalanchoe pinnata have?</question>
+		<answer>Answer: It is known for at least 27 common names throughout the world. Wow, that's a lot of names!</answer>
+	</set1>
+	<set2>
+		<question>Which parts of this plant can be used for medicinal purposes?</question>
+		<answer>Answer: All of it! Not a single thing goes to waste.</answer>
+	</set2>
+	<set3>
+		<question>How tall can this plant grow?</question>
+		<answer>Kalanchoe pinnata can grow from 0.4m all the way up to 1.4m in height. That's even taller than some people!</answer>
+	</set3>
+	
+  </plant2>
+  <plant3>
+	<set1>
+		<question>What color are Lagundi flowers?</question>
+		<answer>Answer: They bloom in colors of blue to lavender.</answer>
+	</set1>
+	<set2>
+		<question>In what regions are Lagundi commonly found?</question>
+		<answer>They are commonly found in Asia, particularly in Southeast Asia. That's where we live!</answer>
+	</set2>
+	<set3>
+		<question>Which parts of Lagundi can the most health benefits be extracted from?</question>
+		<answer>Answer: The leaves and the roots.</answer>
+	</set3>
+	
+  </plant3>
+  <plant4>
+	<set1>
 		<question>It is said that when Oregano is in bloom, it grows beautiful purple or pink flowers that are also edible. True or false?</question>
 		<answer>True! We know its beautiful, but is it tasty?.</answer>
 	</set1>
@@ -25,12 +55,27 @@
 		<answer>Answer: Pizza herb! The soldiers craved for pizza after returning from the Mediterraneans, hence the name. </answer>
 	</set2>
 	<set3>
-		<question>There are over 40 varieties of Oregano. The most common one being Oregano vulgare also known as ______</question>
+		<question>There are over 40 varieties of Oregano. The most common one being Oregano vulgare also known as ________</question>
 		<answer>Answer: Spanish Thyme.</answer>
 	</set3>
 	
-  </plant2>
-  <plant3>
+  </plant4>
+  <plant5>
+	<set1>
+		<question>How tall can a Sambong plant grow?</question>
+		<answer>Answer: It can grow up to 4 meters in height!</answer>
+	</set1>
+	<set2>
+		<question>Can Sambong be eaten?</question>
+		<answer>Answer: Yes! The leaves are actually used as a flavoring ingredient.</answer>
+	</set2>
+	<set3>
+		<question>Where can Sambong be found?</question>
+		<answer>Answer: It is widely distributed in Eastern and Southeastern Asia.</answer>
+	</set3>
+	
+  </plant5>
+  <plant6>
 	<set1>
 		<question>Why is Serenoa repens commonly known as Saw Palmetto?</question>
 		<answer>As its name implies, the plant looks like an actual saw with spikes running down its edges. Cool!</answer>
@@ -44,8 +89,9 @@
 		<answer>True! Humans have been using saw palmetto as a food source for a long time too! Even before Columbus landed, different groups of people from Native Americans to the Spanish have used it for its nutritional value.</answer>
 	</set3>
 	
-  </plant3>
-  <plant4>
+	
+  </plant6>
+  <plant7>
 	<set1>
 		<question>Why is Rauvolfia serpentina called snakeroot? </question>
 		<answer>Answer: The name snakeroot came from the belief that a root poultice was a cure for snakebites.</answer>
@@ -59,5 +105,6 @@
 		<answer>Answer: Its are pink or white in color and form in clumps. Fruits are small drupes which are green initially and turn purple black when ripened.</answer>
 	</set3>
 	
-  </plant4>
+  </plant7>
+  
 </facts>

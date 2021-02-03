@@ -341,7 +341,7 @@ public class UIManager : MonoBehaviour
         {
 
             // Check if Back was pressed this frame
-            if (Input.GetKeyDown(KeyCode.Escape) && welcomePanel.activeSelf)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 exitPrompt.SetActive(true);
             }
