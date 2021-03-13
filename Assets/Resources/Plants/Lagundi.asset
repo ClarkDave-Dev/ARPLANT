@@ -25,9 +25,76 @@ MonoBehaviour:
   plantTrivia: 'Did you know that Lagundi is one of the ten herbal medicines endorsed
     by the Philippine Department of Health as an effective herbal medicine with proven
     therapeutic value. '
-  plantMedicalUses: Lagundi is used to prevent and treat worm infestation. It is
-    used to wash wounds to promote healing. Lagunid is used for anorexia. It is also
-    used to treat stomach problems such as colic, spasms and indisgeston.
+  plantMedicalUses: "Lagundi in Traditional and Folkloric Medicine\r\nLagundi or
+    Vitex negundo has been traditionally used as herbal medicine by Philippine and
+    Indian folks. It;'s main health benefit is to ease respiratory complaints. Lagundi
+    is generally used for the treatment of coughs, asthma symptoms, and other respiratory
+    problems.\r\n\r\nLagundi is also known for its analgesic effect that helps alleviate
+    pain and discomfort. Other traditional health benefits that are derived from
+    the use of Lagundi are as follows:\r\n\r\nLagundi is used to prevent and treat
+    worm infestation\r\nLagundi is also used treat skin diseases such as eczema,
+    ring worm, etc.\r\nUsed to wash wounds to promote healing,\r\nLagundi has an
+    analgesic function to treat rheumatism, muscle pain and inflammation of joints\r\nLagunid
+    is used for anorexia,\r\nUsed to treat Stomach problems such as colic, spasms
+    and indisgeston,\r\nLagundi has claimed health benefits against high cholesterol.\r\nLagundi
+    is also used as a carminative herb\r\nLagundi is believed to promote good memory
+    and eye sight,\r\nLagundi tea is taken to relieve anxiety and to promote relaxation.\r\nThe
+    old folks would burn Vitex negundo leaves ane the smoke is believed to drive
+    away insects, particularly mosquitoes.\r\n\r\nLagundi Essential Oils has Anti
+    Bacterial Properties\r\nThe Indian Journal of Pharmaceutical Sciences (2008 Jul-Aug)
+    Published a research that studied the anti-bacterial properties of Vitex negundo
+    extracts. In this study it was found that the root and leaf extract is active
+    against some bacteria such as  B. subtilis and E. coli. The result is promising
+    in comparision to standard drug ciprofloxacin.\r\n\r\nLagundi / Vitex negundo
+    Anit Inflamatory Activity\r\nThe Indian Journal of Medical Research. (2006 Oct)
+    published a study on Vitex negundo Linn leaf extract health benefit as an adjuvant
+    therapy to standard anti-inflammatory drugs. This was done in lab mice by inducing
+    inflammation and subjecting to anti-inflamatory drugs together with orally administered
+    Vitex negundo extracts. The results suggests that VN has a positve effect as
+    adjutant for anti-inflammatory drugs ibuprofen and phenlbutazone.\r\n\r\nLagundi
+    / Vitex negundo has Brochodilator Activity. Health Benefits for Asthma Confirmed.\r\nAccording
+    to Pharmaceutical Biology (2015 Mar) a study .That examines the bronchodilator
+    activity of Vitex negundo as claimed in traditional medicine. The underlying
+    mechanisms were studied in isolated guinea pig tracheal strips, suspended in
+    organ baths at 37 \xB0C and was subjected to VN extract. Results suggest that
+    Vitex negundo extracts possesses a combination of papaverine-like PDE inhibitor
+    and diltiazem-like Ca(++) entry blocking constituents, which partly explain its
+    bronchodilatory effect, thus validating its medicinal importance in asthma.\r\n\r\nCytotoxic
+    flavone analogues of vitexicarpin, a constituent of the leaves of Vitex negundo.\r\nBioassay-guided
+    fractionation of the chloroform-soluble extract of the leaves of Vitex negundo
+    led to the isolation of the known flavone vitexicarpin, this substance exhibited
+    broad cytotoxicity in a human cancer cell line panel. This findings suggests
+    the potential anti-cancer activity of Vitex negund extract and can further investigation
+    may be done. Source: Journal of Natural Products. (2003 Jun)\r\n\r\nLagundi /
+    Vitex negundo topical paste. Used as anti-inflammation and analgesic in cases
+    of rehumatism, arthritis, muscle pains, headache and fever. The paste is prepared
+    by pounding Lagundi leaves and heating to warm then apply to affected area until
+    condition improves.\r\n\r\nLagundi / Vitex negundo decoction and Tea. Used for
+    washing wounds, vaginal douche, for gargling to treat mouth sores and sore throat
+    and as bronchodilator in cases of coughs and asthma.. Mix one cup of cut fresh
+    leaves and floweres to 2 cups of water. Boil for 10 minutes. Let it steep and
+    strain the solid parts. Tea: take 1/2 cup, three times a day until condition
+    improve.\r\n\r\nLagundi Oil. The Vitex negundo oil can be extracted by distillation
+    or a commercial grade can be bought in herbs stores or online shops. An Amazon
+    listed Pure Nirgundi Oil 30ml -Vitex Negundo Linn. is an example and can be used
+    in combination with other carrier oils.\r\n\r\nVitex Nagundo Tablets and Capsules
+    and Syrups. Check you local pharmacy for supplies. Amazon also listed DR WAKDE's
+    Organic Nirgundi capsules (Vitex negundo). Follow the instructions in the accompanying
+    labels.\r\n\r\nLagundi / Vitex Negundo Warnings, Side Effects and References\r\n\r\nLagundi
+    use is widely acceptable as safe for use for children and adults and no adverse
+    reaction has been reported. However, moderate use is recommended for pregnant
+    women, and treatment should not exceed one week. If symptoms persist and irritation
+    occurs, stop the use and consult your doctor.\r\n\r\nVitex negundo / Lagundi
+    Herbal Medicine: Useful References\r\nBansod MS, Harle UN. Vitex negundo l.:
+    Phytochemical costituets, traditioal uses ad pharmacological properties: Comprehesive
+    review. Pharmacologyonline. 2009;1:286\u201302.\r\n\r\nTandon VR, Gupta RK. Vitex
+    negundo Linn. (VN) leaf extract as an adjuvant therapy to standard anti-inflammatory
+    drugs. Indian J Med Res. 2006;124:447\u201350. [PubMed]\r\n\r\nGautam LN, Shrestha
+    SL, Wagle P, Tamrakar BM. Chemical constituents from Vitex negundo (Linn.) of
+    Nepalese origin. Sci World. 2008;6:27\u201332.\r\nPatil A. Medicinal uses of
+    Vitex negundo Linn. Indian Pat Appl. CODEN: INXXBQ IN 2003MU00761 A 20060616.
+    2006\r\n\r\nBiswal S, Murthy PN, Sahu J, Mohapatra AK, Sahoo P, Sarangi C, et
+    al. Biological activities of Vitex negundo Linn: An overview. Pharmbit. 2008;17:17\u201325."
   plantGeneralInfo: Vitex negundo, commonly known as the Chinese chaste tree, five-leaved
     chaste tree, or horseshoe vitex, or nisinda is a large aromatic shrub with quadrangular,
     densely whitish, tomentose branchlets. It is widely used in folk medicine, particularly

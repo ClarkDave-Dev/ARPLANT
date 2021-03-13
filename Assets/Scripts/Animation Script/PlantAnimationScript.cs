@@ -36,6 +36,7 @@ public class PlantAnimationScript : MonoBehaviour
         PartSwitchScript.HidePlantModel += PlantExit;
 
         animator.SetBool(grow1, true);
+        FindObjectOfType<AudioManager>().Play("grow_plant");
         StartCoroutine(PlayIdle1());
     }
 
@@ -62,6 +63,7 @@ public class PlantAnimationScript : MonoBehaviour
     private void PlantGrow()
     {
         animator.SetBool(grow2, true);
+        FindObjectOfType<AudioManager>().Play("grow_plant");
         StartCoroutine(PlayIdle2());
     }
 

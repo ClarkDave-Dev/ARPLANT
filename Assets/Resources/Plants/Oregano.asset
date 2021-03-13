@@ -17,16 +17,66 @@ MonoBehaviour:
   commonName: Oregano
   botanicalName: Origanium Vulgare
   plantImage: {fileID: 21300000, guid: 5854a31c926653942a2ea7c4ab81071c, type: 3}
-  plantDetails: Oregano, (Origanum vulgare), also called origanum or wild marjoram,
-    aromatic perennial herb of the mint family (Lamiaceae) known for its flavourful
-    dried leaves and flowering tops. Oregano is native to the hills of the Mediterranean
-    countries and western Asia and has naturalized in parts of Mexico and the United
-    States.
+  plantDetails: 'Oregano is a plant. The leaf is used to make medicine.
+
+    
+
+    Oregano
+    is used for respiratory tract disorders such as coughs, asthma, croup, and bronchitis.
+    It is also used for gastrointestinal (GI) disorders such as heartburn and bloating.
+    Other uses include treating menstrual cramps, rheumatoid arthritis, urinary tract
+    disorders including urinary tract infections (UTIs), headaches, and heart conditions.
+
+    
+
+    The
+    oil of oregano is taken by mouth for intestinal parasites, allergies, sinus pain,
+    arthritis, cold and flu, swine flu, earaches, and fatigue. It is applied to the
+    skin for skin conditions including acne, athlete''s foot, oily skin, dandruff,
+    canker sores, warts, ringworm, rosacea, and psoriasis; as well as for insect
+    and spider bites, gum disease, toothaches, muscle pain, and varicose veins. Oregano
+    oil is also used topically as an insect repellent.
+
+    
+
+    In foods and
+    beverages, oregano is used as a culinary spice and a food preservative.'
   plantTrivia: Did you know? - Ancient Greeks believed that cows that grazed in fields
     full of oregano had tastier meat.
-  plantMedicalUses: Oregano leaf is used to make medicine. Oregano is used for respiratory
-    tract disorders such as coughs, asthma, croup, and bronchitis. It is also used
-    for gastrointestinal (GI) disorders such as heartburn and bloating.
+  plantMedicalUses: "Possibly Effective for\r\nHigh cholesterol. Clinical research
+    shows that taking oregano after each meal for 3 months can reduce low-density
+    lipoprotein (LDL or \u201Cbad\u201D) cholesterol and increase high-density lipoprotein
+    (HDL or \u201Cgood\u201D) cholesterol in people with high cholesterol. However,
+    total cholesterol and triglyceride levels are not affected.\r\nParasites in the
+    intestines. Taking oil of oregano for 6 weeks can kill the parasites Blastocystis
+    hominis, Entamoeba hartmanni, and Endolimax nana.\r\n\r\nInsufficient Evidence
+    for\r\nBleeding disorders (hemophilia). Early research suggests that oregano
+    might not prevent bleeding after dental procedures in people with hemophilia.\r\nWound
+    healing. Early research suggests that applying an oregano extract to the skin
+    twice daily for up to 14 days can improve skin color, stiffness, and thickness,
+    but does not improve itching, pain, or scars, in people who have had portions
+    of skin removed surgically.\r\nRepelling insects.\r\n\r\nSide Effects\r\nOregano
+    leaf is LIKELY SAFE when taken in the amounts found in food and POSSIBLY SAFE
+    when taken by mouth or applied to the skin in medicinal amounts. Mild side effects
+    include stomach upset. Oregano might also cause an allergic reaction in people
+    who have an allergy to plants in the Lamiaceae family.\r\n\r\nNot enough is known
+    about the safety of using oregano oil in medicinal amounts.\r\n\r\nSpecial Precautions
+    and Warnings\r\nPregnancy and breast-feeding: Oregano is POSSIBLY UNSAFE when
+    taken by mouth in medicinal amounts during pregnancy. There is concern that oregano
+    in amounts larger than food amounts might cause miscarriage. Not enough is known
+    about the safety of oregano when used in medicinal amounts while nursing.\r\n\r\nBleeding
+    disorders: Oregano might increase the risk of bleeding in people with bleeding
+    disorders.\r\n\r\nAllergies: Oregano can cause reactions in people allergic to
+    Lamiaceae family plants, including basil, hyssop, lavender, marjoram, mint, and
+    sage.\r\n\r\nDiabetes: Oregano might lower blood sugar levels. People with diabetes
+    should use oregano cautiously.\r\n\r\nSurgery: Oregano might increase the risk
+    of bleeding. People who use oregano should stop 2 weeks before surgery.\r\n\r\nModerate
+    Interaction\r\nBe cautious with this combination\r\n\r\nLithium interacts with
+    OREGANO\r\nOregano might have an effect like a water pill or \"diuretic.\" Taking
+    oregano might decrease how well the body gets rid of lithium. This could increase
+    how much lithium is in the body and result in serious side effects. Talk with
+    your healthcare provider before using this product if you are taking lithium.
+    Your lithium dose might need to be changed."
   plantGeneralInfo: "Oregano is a flowering plant in the mint family. It is native
     to temperate Western and Southwestern Eurasia and the Mediterranean region. Oregano
     is a perennial herb, growing from 20\u201380 cm tall, with opposite leaves 1\u20134

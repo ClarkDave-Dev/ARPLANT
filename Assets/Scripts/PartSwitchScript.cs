@@ -46,6 +46,8 @@ public class PartSwitchScript : MonoBehaviour
 
     private void SwitchPart(string partName)
     {
+        FindObjectOfType<AudioManager>().Play("switch_part");
+
         // Disable All Child GameObject
         foreach(Transform part in transform)
         {

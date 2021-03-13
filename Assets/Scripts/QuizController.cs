@@ -24,7 +24,7 @@ public class QuizController : MonoBehaviour
     public GameObject quizButton;
 
     // Start is called before the first frame update
-    public double targetTime = 5.0;
+    public double targetTime = 30.0;
 
     private XmlDocument doc = new XmlDocument();
     private int setNumber = -1;
@@ -72,7 +72,7 @@ public class QuizController : MonoBehaviour
         {
             if(countdownText.text != "Time's up!")
                 countdownText.text = "";
-            targetTime = 5.0;
+            targetTime = 30.0;
         }
     }
     private static QuizController instance;

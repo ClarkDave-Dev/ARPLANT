@@ -17,18 +17,77 @@ MonoBehaviour:
   commonName: Saw Palmetto
   botanicalName: Serenoa Repens
   plantImage: {fileID: 21300000, guid: c40985ed1f8af534fae1272052d7c724, type: 3}
-  plantDetails: Saw palmetto is a type of small palm tree found in Florida and parts
-    of other southeastern states. It has long, green, pointed leaves like many types
-    of palm trees. It also has branches with small berries.
+  plantDetails: "Saw palmetto is a supplement made from the fruit of the Serenoa
+    repens tree.\r\n\r\nIt\u2019s often used to treat enlarged prostate, improve
+    urinary function, and enhance hair growth. Some also use the supplement to boost
+    libido and fertility and reduce inflammation. Finally, saw palmetto is claimed
+    to have anticancer effects.\r\n\r\nHowever, not all of its uses and purported
+    health benefits are supported by science.\r\n\r\nThis article looks at the research
+    behind saw palmetto, including its benefits, potential side effects, and dosage
+    recommendations."
   plantTrivia: Did you know - Native Americans from the Seminole tribe in Florida
     traditionally ate saw palmetto berries for food and to treat urinary and reproductive
     problems associated with an enlarged prostate gland. They also used it to treat
     cough, indigestion, sleeping problems, and infertility.
-  plantMedicalUses: Saw palmetto is a supplement made from the fruit of the Serenoa
-    repens tree. It's often used to treat enlarged prostate, improve urinary function,
-    and enhance hair growth. Some also use the supplement to boost libido and fertility
-    and reduce inflammation. Finally, saw palmetto is claimed to have anticancer
-    effects.
+  plantMedicalUses: "May benefit prostate health and urinary function\r\nSaw palmetto
+    may help treat benign prostatic hyperplasia (BPH) \u2014 a medical condition
+    characterized by a slow, noncancerous yet abnormal enlargement of the prostate.\r\n\r\nBPH
+    is common in older men, affecting up to 75% of men in their 70s.\r\n\r\nIf left
+    untreated, the prostate can enlarge to the point of interfering with the ability
+    to properly empty the bladder. It can also increase the frequency and urge to
+    urinate, often causing excessive nighttime urination which may disrupt sleep.\r\n\r\nBPH
+    is part of a larger group of lower urinary tract symptoms (LUTS), a group of
+    symptoms typically involving the bladder, urethra, and prostate. Unlike BPH,
+    LUTS can affect both men and women.\r\n\r\nSeveral studies have looked at saw
+    palmetto\u2019s effect on LUTS \u2014 with mixed results.\r\n\r\nEarly studies
+    reported that saw palmetto may help increase urine flow and reduce nighttime
+    urination in men with BPH \u2014 both when used alone or in combination with
+    traditional drug therapy.\r\n\r\nHowever, the latest Cochrane review \u2014 the
+    highest standard in evidence-based healthcare \u2014 concluded that saw palmetto
+    provides little improvement in LUTS.\r\n\r\nOn the other hand, two reviews note
+    that a daily dose of 320 mg of Permixon \u2014 a specific saw palmetto extract
+    \u2014 was more effective than a placebo at improving urine flow and reducing
+    nighttime urination.\r\n\r\nIt\u2019s possible that the effects vary based on
+    the strength of the individual formulation. Overall, more studies are needed
+    before strong conclusions can be made.\r\n\r\nMay reduce male pattern baldness\r\nSaw
+    palmetto may help prevent androgenic alopecia \u2014 a type of hair loss also
+    known as male and female pattern baldness in men and women, respectively.\r\n\r\nIt\u2019s
+    thought to work by blocking the enzyme that converts testosterone to dihydrotestosterone
+    (DHT), an androgen-type hormone believed to cause this form of hair loss.\r\n\r\nHigher
+    levels of androgen hormones like DHT are thought to shorten the hair growth cycle
+    and lead to the growth of shorter and thinner strands of hair (15).\r\n\r\nOne
+    small study reports that a daily 200-mg dose of saw palmetto \u2014 taken with
+    another beneficial plant compound known as beta-sitosterol \u2014 reduced hair
+    loss in 60% of men with androgenic alopecia compared to a placebo.\r\n\r\nIn
+    a 2-year study, men with male pattern baldness were given 320 mg of saw palmetto
+    per day or finasteride, a conventional hair loss medication.\r\n\r\nBy the end
+    of the study, about one-third of those given saw palmetto reported an increase
+    in hair growth. That said, saw palmetto was only half as effective as the conventional
+    medication.\r\n\r\nA small study also reports a small increase in hair count
+    in about half of the men treated with a saw palmetto hair lotion. However, this
+    lotion also contained other active ingredients, making it difficult to isolate
+    the effect of saw palmetto (18).\r\n\r\nAlthough promising, the research on saw
+    palmetto\u2019s effect on hair loss is limited. More studies are needed before
+    strong conclusions can be made.\r\n\r\nOther potential benefits\r\nSaw palmetto
+    is touted as providing additional benefits \u2014 though most are unsupported
+    by strong science.\r\n\r\nFor instance, test-tube research shows that Permixon
+    \u2013 a specific formulation of saw palmetto \u2013 may reduce markers of inflammation
+    in prostate cells. However, it\u2019s unclear whether other saw palmetto supplements
+    have the same effec.\r\n\r\nPermixon may also protect libido and fertility in
+    men. Conventional drug therapy for BPH and LUTS has been shown to negatively
+    impact sexual function in men.\r\n\r\nA review of 12 randomized controlled studies
+    \u2014 the gold standard in nutrition research \u2014 compared Permixon with
+    conventional drug therapy as a treatment for BPH and LUTS.\r\n\r\nThough both
+    produced negative side effects on male sexual function, the saw palmetto supplement
+    led to smaller drops in libido and lower impotence compared to the conventional
+    drug treatment.\r\n\r\nStill, it\u2019s unclear whether Permixon has the same
+    effect in healthy men or whether other saw palmetto formulations offer similar
+    protective benefits.\r\n\r\nWhat\u2019s more, additional studies list decreased
+    libido as a potential side effect of taking saw palmetto supplements \u2014 so
+    more research is needed to confirm this.\r\n\r\nFinally, test-tube research suggests
+    that saw palmetto may help kill and slow the growth of certain cancer cells,
+    including of the prostate. Although promising, not all studies agree, and more
+    research is needed"
   plantGeneralInfo: "Serenoa repens, commonly known as saw palmetto, is the sole
     species currently classified in the genus Serenoa. It is a small palm, growing
     to a maximum height around 7\u201310 ft. It is endemic to Southeastern United

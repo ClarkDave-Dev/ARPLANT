@@ -120,12 +120,18 @@ public class PlacementController : MonoBehaviour
                         referencePoint = arReferencePointManager.AddAnchor(hitPose);
                         placedPlants = 1;
                         // EnableOption2();
+                        UIManager.Instance.instructionPanel.SetActive(false);
                         UIManager.Instance.ShowOption2Layer();
                     }
                     if(!isMoving)
                         SetAllPlanesActive(false);
                 }
             }
+        }
+        else 
+        {
+            UIManager.Instance.instructionPanel.SetActive(true);
+            UIManager.Instance.instructionText.text = "Please scan the flat surface slowly";
         }
     }
 

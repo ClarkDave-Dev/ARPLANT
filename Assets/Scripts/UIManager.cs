@@ -23,6 +23,9 @@ public class UIManager : MonoBehaviour
     public GameObject backPanel;
     public GameObject plantMovePanel;
 
+    public GameObject instructionPanel;
+    public Text instructionText;
+
 
     private List<GameObject> panels = new List<GameObject>();
 
@@ -78,6 +81,8 @@ public class UIManager : MonoBehaviour
         panels.Add(quizPanel);
         panels.Add(quizAnswerPanel);
         panels.Add(backPanel);
+        
+        instructionPanel.SetActive(false);
 
         ShowWelcomePanel();
         // ShowOption2Layer();
